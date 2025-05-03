@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive page Emiliano</title>
+    <!-- link al cs -->
+     <link rel="stylesheet" href="style.css">
+     <!-- Iconos "boxicons" pagina -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <!-- Fuentes google -->
+</head>
+<body>
+    <!-- navbar -->
+     <header>
+        <!-- contenedor de navegacion -->
+         <div class="nav container">
+            <!-- Icono de menu -->
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <!-- Logo -->
+             <a href="#" class="logo">Soluciones<span>Cevillano</span></a>
+             <!-- Lista de navegacion -->
+              <ul class="navbar">
+                <li><a href="#home" class="active">Inicio</a></li>
+                <li><a href="#trabajos">Que hacemos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#galeria">Trabajos</a></li>
+                <li><a href="#pie">Contacto</a></li>
+              </ul>
+              <!-- Icono de busqueda -->
+              <i class='bx bx-search-alt' id="search-icon" ></i>
+              <!-- Cuadro de busqueda -->
+               <div class="search-box container">
+                <input type="search" name="" id="" placeholder="Busque aqui...">
+               </div>
+         </div>
+     </header>
+     <!-- la home -->
+      <section class="home" id="home">
+            <div class="home-text">
+                <h1>Ofrecemos todo lo <br>que <span>tu hogar</span> necesita</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Modi vero omnis minima animi? Doloribus cum neque ratione, hic provident delectus reprehenderit voluptatum, deserunt eligendi, exercitationem quisquam! Facere aperiam rerum dolorum!</p>
+                <!-- boton de home -->
+                 <a href="#trabajos" class="btn">Descubra ahora</a>
+            </div>
+      </section>
+      <!-- seccion de trabajos -->
+        <section class="trabajos" id="trabajos"> 
+            <div class="heading">
+                <span>Tipo de trabajos</span>
+                <h2>Hacemos todo tipo de trabajos!</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit soluta quidem tempore! </p>
+            </div>
+            <!-- contenedor de trabajos -->
+            <div class="trabajo-container container">
+                <!-- box 1 -->
+                 <div class="box">
+                     <img src="img/reparacion1.jpg" alt="">
+                     <h2>Electricidad</h2>
+                 </div>
+                <!-- box 2 -->
+                 <div class="box">
+                     <img src="img/reparacion2.jpg" alt="">
+                     <h2>Albañileria</h2>
+                 </div>
+                <!-- box 3 -->
+                 <div class="box">
+                     <img src="img/reparacion3.png" alt="">
+                     <h2>Plomeria</h2>
+                 </div>
+                <!-- box 4 -->
+                 <div class="box">
+                     <img src="img/reparacion4.png" alt="">
+                     <h2>Pintura</h2>
+                 </div>
+                <!-- box 5 -->
+                 <div class="box">
+                     <img src="img/reparacion5.png" alt="">
+                     <h2>Reparaciones, armado de muebles</h2>
+                 </div>
+                <!-- box 6-->
+                 <div class="box">
+                     <img src="img/reparacion6.png" alt="">
+                     <h2>Arreglos de gas</h2>
+                 </div>
+                <!-- box 7-->
+                 <div class="box">
+                     <img src="img/reparacion7.png" alt="">
+                     <h2>Reparaciones varias del hogar</h2>
+                 </div>
+                <!-- box 8-->
+                 <div class="box">
+                     <img src="img/reparacion8.jpg" alt="">
+                     <h2>Heladeras, lavacarropas, secarropas etc</h2>
+                 </div>
+            </div>
+            <!-- Modal de descripción de trabajo -->
+            <div class="modal-overlay" id="modalOverlay">
+                <div class="modal-content" id="modalContent">
+                  <button class="close-btn" id="closeModal" aria-label="Cerrar modal">
+                    &times;
+                  </button>
+                  <h3 id="modalTitle">Título del Trabajo</h3>
+                  <ul id="modalList"></ul>
+                </div>
+              </div>
+                    
+        </section>
+        <section class="about container" id="nosotros">
+            <div class="about-img">
+                <img src="img/about1.jpg" alt="">
+            </div>
+            <div class="about-text">
+                <span>Sobre nosotros</span>
+                <h2>Buenos precios en <br>trabajos de calidad</h2>
+                <p>Lorem ipsum dolor, sit quia iusto? Recusandae, officia, dolorem veniam neque voluptates...</p>
+                
+                <div class="expandable-content" id="extra-content">
+                    <div class="content-hidden">
+                      <p><i class='bx bx-calendar-star'></i> <strong>15 años</strong> de experiencia en el rubro</p>
+                      <p><i class='bx bx-check-shield'></i> Más de <strong>500 clientes</strong> satisfechos</p>
+                      <p><i class='bx bx-certification'></i> Técnicos <strong>certificados</strong></p>
+                      <p><i class='bx bx-badge-check'></i> Experiencia desde 2008</p>
+                      <p><i class='bx bx-home-alt'></i> +1000 reparaciones realizadas</p>
+                    </div>
+                  </div>
+                  <button class="btn btn-expand" id="toggle-btn">
+                    Leer más <i class='bx bx-chevron-down'></i>
+                  </button>
+                </div>
+            </div>
+        </section>
+        <!-- mas secciones -->
+         <section class="parts" id="parts">
+            <div class="heading">
+                <span>Que podemos ofrecerte?</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, consectetur adipisicing elit.</p>
+            </div>
+         </section>
+
+         <section class="galeria" id="galeria">
+            <div class="heading">
+              <span>Galería</span>
+              <h2>Trabajos realizados</h2>
+            </div>
+            <div class="galeria-box">
+              <button class="galeria-btn left" onclick="moveSlide(-1)">&#10094;</button>
+              <div class="galeria-track-wrapper">
+                <div class="galeria-track" id="galeriaTrack">
+                  <img src="img/reparacion1.jpg" alt="">
+                  <img src="img/reparacion2.jpg" alt="">
+                  <img src="img/reparacion3.png" alt="">
+                  <img src="img/reparacion4.png" alt="">
+                  <img src="img/reparacion5.png" alt="">
+                  <img src="img/reparacion6.png" alt="">
+                  <!-- duplicados para efecto infinito -->
+                  <img src="img/reparacion1.jpg" alt="">
+                  <img src="img/reparacion2.jpg" alt="">
+                  <img src="img/reparacion3.png" alt="">
+                </div>
+              </div>
+              <button class="galeria-btn right" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+          </section>
+
+     <!-- link a whatsapp flotante -->
+     <a href="https://api.whatsapp.com/send/?phone=5491121695540&text&type=phone_number&app_absent=0" class="whatsapp-button" target="_blank">
+        <i class='bx bxl-whatsapp'></i>
+        </a>
+
+
+        <!-- FOOTER -->
+         <section class="footer" id="pie">
+            <div class="footer-container container">
+                <div class="footer-box">
+                    <a href="#" class="logo">Soluciones<span>Cevillano</a>
+                        <div class="social">
+                            <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='bx bxl-instagram'></i></a>
+                        </div>
+                </div>
+                <div class="footer-box">
+                    <h3>Informacion</h3>
+                    <a href="#">home</a>
+                    <a href="#">Test1</a>
+                    <a href="#">Info</a>
+                    <a href="#">Contacto</a>
+                </div>
+                <div class="footer-box">
+                    <h3>page</h3>
+                    <a href="#">home</a>
+                    <a href="#">Test1</a>
+                    <a href="#">Info</a>
+                    <a href="#">Contacto</a>
+                </div>
+                <div class="footer-box">
+                    <h3>Donde trabajamos?</h3>
+                    <p>Buenos Aires</p>
+                    <p>Capital</p>
+                    <p>Al rededores</p>
+                </div>
+            </div>
+
+         </section>
+         <!-- el copyringht -->
+          <div class="copyright">
+            <p>© SolucionesCevillano se reserva todos los derechos</p>
+          </div>
+
+      <!-- link al JS -->
+     <script src="main.js"></script>
+
+
+    
+</body>
+</html>
